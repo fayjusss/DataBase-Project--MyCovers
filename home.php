@@ -11,7 +11,7 @@
     <tbody>
       <?php
       include "connection.php";
-      $myquery="SELECT songs.*, Artists.name FROM songs INNER JOIN Artists ON songs.artist_id = Artists.artist_id";
+      $myquery="SELECT Songs.*, Artists.name FROM Songs INNER JOIN Artists ON Songs.artist_id = Artists.artist_id";
       $songs_data=$db->query($myquery);
 
       foreach ($songs_data as $song) {
