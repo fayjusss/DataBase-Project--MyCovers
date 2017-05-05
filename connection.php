@@ -1,8 +1,9 @@
 <?php
 	try
 	{
-	 $dsn = "mysql:host=localhost;dbname=MyCovers";
-	 $db = new PDO ($dsn, "webuser", "webpass");
+	 $dsn = "mysql:host=mysli.oamk.fi;dbname=opisk_t6safa00";
+	 $db = new PDO ($dsn, "t6safa00", "1234");
+	 $db->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	 //print ("Connected\n");
 	}
 	catch (PDOException $e)
