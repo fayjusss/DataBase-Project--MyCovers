@@ -1,0 +1,28 @@
+$(document).ready(function(){
+  $("#tab-content").load('./intro.php');
+  $("#intro").click(function(){
+    $("#tab-content").load('./intro.php');
+    $(this).addClass("is-active");
+    $(this).siblings().removeClass("is-active");
+  });
+  $("#req-analysis").click(function(){
+    $("#tab-content").load('./req_analysis.php');
+    $(this).addClass("is-active");
+    $(this).siblings().removeClass("is-active");
+  });
+  $("#sql-code").click(function(){
+    $("#tab-content").load('./sql_code.php');
+    $(this).addClass("is-active");
+    $(this).siblings().removeClass("is-active");
+  });
+  $("#field-def").click(function(){
+    $("#tab-content").load('./field_def.php');
+    $(this).addClass("is-active");
+    $(this).siblings().removeClass("is-active");
+  });
+  $("#ERdiag").click(function(){
+    $("#tab-content").load('./ERdiag.php');
+    $(this).addClass("is-active");
+    $(this).siblings().removeClass("is-active");
+  });
+});
